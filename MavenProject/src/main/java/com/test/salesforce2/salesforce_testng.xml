@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name = "Salesforce Test Suite" parallel = "tests" thread-count = "2">
+   <test name = "com.test.salesforce">
+      <classes>
+         <class name = "com.test.salesforce.CreateAcctTest" />
+      </classes>
+   </test>
+   <test name = "com.test.salesforce">
+      <classes>
+         <class name = "com.test.salesforce.DeleteAcctTest" />
+      </classes>
+   </test>
+</suite>

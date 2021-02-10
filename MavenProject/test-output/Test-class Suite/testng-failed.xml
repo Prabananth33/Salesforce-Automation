@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Test-class Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Test-class test 1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.test.salesforce.CreateAcctTest">
+        <methods>
+          <include name="createtest"/>
+          <include name="driverInit"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- com.test.salesforce.CreateAcctTest -->
+    </classes>
+  </test> <!-- Test-class test 1(failed) -->
+  <test thread-count="2" parallel="tests" name="Test-class test 2(failed)">
+    <parameter name="browser" value="FF"/>
+    <classes>
+      <class name="com.test.salesforce.DeleteAcctTest">
+        <methods>
+          <include name="driverInit"/>
+          <include name="quitBrowser"/>
+          <include name="deleteTest"/>
+        </methods>
+      </class> <!-- com.test.salesforce.DeleteAcctTest -->
+    </classes>
+  </test> <!-- Test-class test 2(failed) -->
+</suite> <!-- Failed suite [Test-class Suite] -->
